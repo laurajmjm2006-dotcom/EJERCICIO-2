@@ -1,0 +1,125 @@
+
+
+/* Estilos generales */
+body {
+    background-color: #f2f2f2;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 25px;
+}
+
+/* Titulo principal: identificador */
+#titulo-principal {
+    color: darkblue;
+    text-align: center;
+    border: 2px solid darkblue;
+    padding: 10px;
+}
+
+/* Titulos de los apartados */
+h2 {
+    color: darkgreen;
+}
+
+/* Parrafos */
+p {
+    line-height: 1.5;
+}
+
+/* Advertencia: clase */
+.advertencia {
+    background-color: #ffdddd;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+/* Listas */
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+/* Contenedor principal para la Versión 1 */
+.v1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los elementos */
+}
+
+/* Fila central que contiene las 3 cajas */
+.v1 .fila-central {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Cada una de las 3 columnas de la fila central */
+.v1 .fila-central > div {
+  flex: 1; /* Hace que todas ocupen el mismo ancho disponible */
+}
+
+
+
+/* ================================= */
+/* VERSION 2 */
+/* ================================= */
+
+/* CONTENEDOR PRINCIPAL */
+.version-v2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    background-color: white;
+    border: 2px solid #333333;
+    border-radius: 8px;
+
+    padding: 20px;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* CAJA SUPERIOR */
+.version-v2 .cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #333333;
+    min-height: 120px;
+}
+
+/* TITULO PRINCIPAL */
+.version-v2 #titulo-principal {
+    border: none;
+    padding: 10px;
+    margin: 0;
+}
+
+/* FILA CENTRAL */
+.version-v2 .fila-central {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* CUATRO CAJAS CENTRALES */
+.version-v2 .fila-central .caja {
+    flex: 1 1 calc(50% - 15px);
+    box-sizing: border-box;
+
+    border: 1px solid #333333;
+    padding: 10px;
+    min-width: 0;
+}
+
+/* CAJA INFERIOR */
+.version-v2 .pie {
+    border: 1px solid #333333;
+    padding: 10px;
+}
